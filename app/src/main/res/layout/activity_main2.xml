@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:background="#000000"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChiTietAnh.Main2Activity">
+
+    <androidx.viewpager.widget.ViewPager
+        android:layout_marginTop="120dp"
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:scaleType="fitXY"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#2196f3"
+        android:src="@drawable/plus"
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/fab_layout"/>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ChiTietAnh.CTGaiActivity"></activity>
+        <activity android:name=".GaiXinhActivity" />
+        <activity android:name=".ChiTietAnh.CtPhongCanhActivity" />
+        <activity android:name=".PhongCanhActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".ChiTietAnh.Main2Activity" />
+        <activity android:name=".Man_Hinh_Chao_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <provider android:authorities="com.facebook.app.FacebookContentProvider621106718589402"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+    </application>
+
+</manifest>
